@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro3</title>
+    <script src="https://kit.fontawesome.com/7692c3ab0a.js" crossorigin="anonymous"></script>
+   
+    <style>
+     body{
+       padding: 0%;
+       margin: 0%;
+       /* background-color: black; */
+     }       
+     .nav{
+        width: 20%;
+        position:fixed; 
+        top: 0%; 
+        left: 0%;
+        bottom: 0%;        
+        background-color:rgb(252, 200, 209); 
+     } 
+     
+     .logo{
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 100px;
+        
+        
+     }
+     h2{
+        margin-left: 50px;
+        margin-top: -15px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: oblique;
+        font-weight:bolder;
+        letter-spacing: 5px;
+     }
+     .nav ul li{
+        list-style: none;
+        border-bottom: 1px solid black;
+        padding: 15px;
+        flex: auto;
+       
+
+     }
+     .nav ul li a{
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 1px;
+     }
+     .nav .funny
+     {
+      color: rgb(38, 58, 41);
+      padding-right: 10px;
+      box-shadow: 5px 4px 5px;
+      padding:16px;
+      margin-right: 40px;
+      transition: 0.5s;     
+      font-weight: bolder;
+     }
+     .icon1{
+     width: 100%;
+     text-align: center;
+     margin-top: 70px;
+       
+     }
+     .icon1 i{
+      font-size: 22px;
+      color: black;
+      
+      
+      
+      
+     }
+     .video{
+        object-fit: cover;
+        height:100vh;
+        width: 80%;
+        position: relative;
+        left: 20%;
+        opacity: 0.8;       
+     }
+     .image{
+       position: absolute;
+       top: 30%;
+       left: 50%;
+       
+     }
+     .image1{
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 10px solid rgba(0,0,0,0.3);
+        
+
+     }
+     h1{
+        letter-spacing: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(250, 244, 183);
+        font-weight: bolder;
+
+     }
+     span{
+        display: block;
+        margin-left: -40px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 25px;
+        word-spacing: 8px;
+        letter-spacing: 4px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         color:rgb(205, 240, 234);
+        position:relative;
+
+     }
+     
+     .detail{  
+       width: 80%;  
+       margin: 0%;
+       position:relative;
+       
+      
+
+     }
+     .about{  
+      width: 80%;
+      left: 20%;
+      position: relative;      
+     }
+     .about h2{
+      margin: 50px 50px;
+     
+     }
+     .boxX{
+      border: 15px solid black;
+      width: 350px;
+      height: 400px;
+      margin-top: 50px;
+      margin-left: 60px;
+      position: relative;
+      float: left;
+      left: 10%;
+      
+   }
+      .image2{
+         width: 350px;
+         height: 400px;
+         position: absolute;
+         top: -30px;
+         left: -30px;
+         box-shadow: 10px 10px 10px;
+         
+      }
+      
+      .content{
+       transform: translate(150px,40px);     
+       height: 500px;       
+      }
+       .content h3{
+         font-size: 20px;
+         letter-spacing: 1px;
+         letter-spacing: 2px;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-weight: bold;
+       }
+        .content h3 span{
+         display: inline;
+         left: 40px;
+         font-size: 18px;
+         color: brown;
+       }
+        p{
+         letter-spacing: 1px;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 22px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .list li{
+         list-style: none;
+         margin:7px;
+         letter-spacing: 1px;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         font-size: 14px;
+
+        }
+        i{
+         padding: 10px;
+         color: brown; 
+          
+           }
+        
+         
+         .java-content{
+          width: 80%;
+          left: 20%;
+          height: 100%;
+      
+   }
+  
+      
+    
+   h4{
+       position: relative;
+       top: 80px;
+       font-size: 25px;
+       text-align: center;
+       margin: 20px;
+   }
+   .kodai-video{
+      width: 100%;
+      position: relative;
+     transform: translate(250px,100px);
+
+   }
+    video{
+      object-fit: cover;
+      position: relative;
+      height: 100%;
+      left: 100px;
+      width: 80%;
+      
+      
+    }  
+     .img-2{
+      display: grid;
+      grid-template-columns: repeat(2,400px);
+      margin-top: 150px ;
+      margin-left: 340px;
+      place-items: center;
+      gap: 20px;
+      
+        
+     }
+      .img-2 img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 1);
+         width: 100%;
+         height: 100%;
+         
+      } 
+      h3{
+         font-size: 25px;
+      }
+      #buttons{
+            display: flex;
+            position: relative;
+            margin-left: 340px;
+            
+            
+            
+           
+        }
+        .buttons button{
+            
+            align-items: center;
+            width: 100px;
+            height: 24px;
+            background-color: rgb(155, 56, 29);
+            color: white;
+            border: 2px solid rgb(194, 173, 167);
+            border-radius: 5px;
+          
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: .5s;
+           
+        }
+        /* .buttons button:hover, */
+        .buttons .onclick
+        {
+            background-color:  rgb(34, 61, 71);
+        }
+        .buttons input{
+    
+           padding: 0px 10px;
+           outline: none;
+           border-radius: 5px;
+           border: none;
+           margin-left: 100px;
+           letter-spacing: 1px;
+           font-weight: 600;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+         
+         
+        
+        .container{
+        
+           display: grid;
+           grid-template-columns: repeat(5,170px);
+           gap: 20px;
+        }
+        .box{
+         border: 5px solid white;
+         overflow: hidden;
+         width:150px;
+         height: 150px;
+         margin-left: 320px;
+         margin-top: 20px;
+        }
+            
+        
+        .box img{
+            width: 100%;
+            height: 100%;
+            transform-origin: top;
+            transition: .8s;
+          
+           
+        }
+        .box img:hover{
+            transform: scale(1.7); 
+          
+        } 
+        
+         
+        
+        .java-title{
+        margin: 100px 0px 30px 360px;
+        }
+        .arun{
+
+        width: 80%;
+        background-color: 58641D;
+        margin-left: 200px;
+        
+        }
+
+#pro{
+margin: 120px 200px 40px 190px;
+
+}
+.pro1{
+position: relative;
+width: 80%;
+margin: 0 auto;
+height: 700px;
+background-color: rgb(25, 139, 210);
+
+}
+.meet-2{
+/* padding: 40px; */
+color: white;
+}
+.pro2{ 
+   position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.pro2 li {
+display: inline;
+padding: 10px;
+}
+
+.pro2 li a{
+  font-size: 12px;
+  text-decoration: none;
+   color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pro2 li a:hover{
+
+  color: #06D85F;
+}
+
+.pro3{
+
+  position: absolute;
+  width: 100%;
+  top: 170px;
+  height: 600px;
+ left:85px;
+ bottom: 400px;
+ box-shadow:2px 1px 12px;
+ background-color: #fff;
+ border-radius: 10px;
+}
+.col{
+
+position: absolute;
+top: 100px;
+height: 300px;
+
+}
+#col1{
+width: 400px;
+height: 500px;
+position: absolute;
+top:-80px;
+left:20px;
+border-radius: 10px;
+}
+.col2{
+position: absolute;
+left: 450px;
+top: -100px;
+width: 200px;
+}
+.col3{
+letter-spacing: 1px;
+
+}
+
+
+ul {
+list-style-type: none;
+padding:1px;
+}
+ul li{
+padding: 7px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.fa-calendar{
+color: #198bd2;
+ 
+font-size: 13px;
+}
+.fa-phone{
+
+color:rgb(25, 139, 210) ;
+ 
+font-size: 13px;
+}
+.fa-envelope{
+color: rgb(25, 139, 210);
+
+font-size: 13px;
+}
+.fa-home{
+color: rgb(25, 139, 210);
+
+font-size: 13px;
+}   /*  */
+.containers{
+      margin: 200px 0px -70px 320px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+      background-position: center;
+      object-fit: cover;     
+      background-image: url(./wallpaper-mania.com_High_resolution_wallpaper_background_ID_77700363426.jpg);
+      background-size:100%;
+      height: 100%;
+      width: 70%;
+      border: 7px solid white;
+       border-radius: 20px;
+   
+
+    }
+    .icon img{
+        width: 25px;
+        position: relative;
+        top: -15px;
+    }
+    .icon{
+       padding:30px 40px;
+       color: white;
+    }   
+    .names{
+        position: relative;
+        top: -60px;
+        left: -270px;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+    } 
+    .icon ul{
+        list-style-type: none;
+        display: inline;
+       position: relative;
+       top:-105px;
+       left: 210px;
+       
+        
+
+    } 
+    .icon ul li { 
+        display: inline; 
+        
+    }
+    .icon ul li a {
+        text-decoration: none;
+        color:white;
+        margin-left: 5px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+      
+     .icon ul li a:hover{
+        color: rgb(22, 210, 38);
+        
+        
+     }
+    .junior{
+        display: inline;
+        margin-left: 20px;
+        
+        
+    }
+    .junior button{
+        margin: 3px;
+        position: relative;
+        left: 250px;
+        top: -105px;
+        padding: 7px;
+        border-radius: 15px;
+        width: 80px;
+        background-color: rgb(151, 222, 206);
+        color:black;
+        font-weight: bolder;
+        border: 1px solid rgb(118,181,197);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .junior button:hover{
+        background-color:rgb(255, 172, 172);
+        border: px solid rgb(255, 172, 172);
+        color: black;
+        transform:scale(1.2,1.2);
+    }
+    .looking{
+        margin-top:50px;
+        
+        font-size: 50px;
+        font-family: sans-serif;
+        margin-left: 40px;
+       
+      
+    }
+     h5{
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 1px;
+        font-weight: lighter;
+        font-size: 16;
+        color: rgb(69, 228, 64);
+        margin-left: -10px;
+        margin-top: 10px;
+     }
+ 
+     .welcome{
+        background-color:#06D85F;
+        outline: none;
+        border: none;
+        margin-top: 30px;
+        width: 200px;
+        text-align: center;
+        padding: 5px;
+        color:rgb(57, 48, 83);
+        transition: 1s;
+        
+     }
+     .welcome:hover{
+        background-color: rgb(20, 108, 148);
+        color:rgb(254, 255, 134);
+     }
+     .icons1{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px ;
+        
+        
+     }
+     .icon i{
+        margin: 20px;
+        font-size: 20px;
+        color: black;/*  */
+     }
+     #bg{
+        width: 70%;
+        height: 600px;
+        margin-left: 330px;
+        margin-top: 150px;
+        
+     }
+     #bg img{
+            width:100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            
+            
+      
+
+           }
+
+        #hero{
+           position: relative;
+           top: -650px; 
+            
+                      
+          
+        
+           
+            
+          
+        }
+        .h2{
+            position: relative;
+            top: 75px;
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+
+        }
+        #hero ul{
+            position: absolute;
+            right: 30px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 1000px; */
+            
+            
+        }
+           .ul li{
+            background-color: rgb(157, 189, 201);
+            /* padding: 7px 17px; */
+            /* border-radius: 20px; */
+            display:block;
+            transition: all 1s ease;
+           }
+           .ul li:hover{
+           
+            background-color: brown;
+
+           }
+            
+        
+        
+        
+        #hero ul li{
+            list-style: none;
+            width: 100px;
+            text-align: center;
+            
+        }
+        .ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight:bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 1px;
+            border-bottom: 1px solid transparent;
+            transition: all .55s ease;
+
+        } 
+        
+
+        
+        
+        .ul li a:hover{
+            border-bottom: 2px solid black;
+            color: brown;
+           
+        }
+        #sec{
+            position:relative;
+            top: -450px;
+            left: 10%;
+            width: 40%;
+            animation-name: slide;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+
+            
+           
+        }
+        @keyframes slide{
+            from{top: 50px; opacity: 0;}
+            to{bottom: 0px; opacity: 0.9;}
+
+            }
+        
+        .h5{
+            font-size: 15px;
+            color: saddlebrown;
+            letter-spacing: 1px;
+            font-family: 'Red Rose', cursive;
+            margin-bottom: 30px;
+        }
+        .h1{
+            font-family: 'Permanent Marker', cursive;
+            color: darkslategray;
+            letter-spacing: 2px;
+            font-size: 27px;
+            margin-bottom: 20px;
+           
+        }
+        #sec p{
+            letter-spacing: .55px;
+            font-weight:600;
+            line-height: 27px;
+            font-family: 'Metal', cursive;
+            margin-bottom: 50px;
+            text-transform: capitalize;
+        }
+        #sec a{
+            width: 200px;
+            background-color: rgb(42, 186, 63);
+            padding: 10px 20px;
+            font-size: 13px;
+            letter-spacing: .55px;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            text-align: center;
+            font-weight:bold;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            transition: all .55s ease;
+            display:block;
+
+          
+        }
+        
+
+        
+        #sec a:hover{
+            background: transparent;
+            transform: translateX(10px);
+            border: 1px solid black;
+            color: black;
+            
+        }
+        #sec i{
+            margin-right: 10px;
+            font-size: 10px;
+            
+        }
+        #img{
+           position: absolute;
+           top: 100px;
+           left: 400px;
+           animation-name: slide;
+           animation-duration: 3s;
+
+          
+        }
+        
+            
+        
+        @keyframes slide{
+            from{top: 50px; opacity: 0;}
+            to{bottom: 0px; opacity: 0.9;}
+        }
+        
+        #img img{
+            width: 350px;
+            height: auto;
+            
+        }
+        /*  java script*/
+       #slider-container {
+        width: 600px;
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+        left: 120px;
+        top: 100px;
+        margin: 0 auto;
+    }
+
+    #slider-images {
+      width: 2000px; 
+      height: 600px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: left 0.5s ease;
+    }
+
+    .slider-image {
+      float: left;
+      width: 600px;
+      height: 500px;
+    }
+
+    #prev-button,
+    #next-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: #ccc;
+      color: #000;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+    }
+
+    #prev-button {
+      left: 10px;
+    }
+
+    #next-button {
+      right: 10px;
+    }
+     .slide-h1{
+        position: relative;
+        margin-left: 300px;
+        top: 100px;
+        background-color: #06D85F;
+     }  
+        
+     /* new year*/
+     .contain{
+           position: relative;
+           top: 200px;
+           text-align: center;
+           color: #fff;
+
+        }
+        .title h2{
+            text-transform: uppercase;
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+          
+        }
+        .title h1{
+            text-transform: uppercase;
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 40px;
+        }
+        .boxXX{
+         display: inline-block;
+         
+
+        }
+        .boxXX h3{
+            padding: 0px 30px;
+            font-size: 20px;
+            position: relative;
+            top: -30px;
+            font-weight: 500;
+            
+        }
+        .boxXX p{
+            text-transform: uppercase;
+            position: relative;
+            top: -40px;
+            font-size: 10px;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+        .b-day{
+            position: relative;
+            margin-left:340px;
+            margin-bottom: 200px;
+            top: 150px;
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./pxfuel\ \(11\).jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+            width: 820px;
+            height:600px;
+            
+        }
+        /*  */
+        .form-detail{
+            display: flex;
+            height: 700px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 850px;
+            margin-left: 320px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+           
+        }
+        input:focus{
+            outline: none;
+            
+        }
+        .form-detail input{
+            position: relative;
+            display: block;
+            padding: 12px 30px;
+            margin: 32px 20px;
+            font-size: 10px;
+            font-weight: 800;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            width: 200px;
+            letter-spacing: 1px;
+            border-radius: 3px;
+            border: none;
+            background-color: rgba(225, 225,225,0.5);
+            
+            
+        }
+        .form-detail h2{
+            text-align: center;
+            letter-spacing: 3px;
+            font-weight:bold;
+            font-style: italic;
+            margin: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          
+        }
+        .form{
+          
+             padding: 20px;
+             border-radius: 10px;
+            width: 300px;
+            height: 370px;
+            background-color: rgba(225, 225,225,0.5);
+        }
+        .form-detail button{
+             width: 150px;
+             margin: 5px 80px;
+             padding: 10px;
+             border-radius:20px;
+             border: none;
+             background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+             color: black;
+             text-transform: uppercase;
+             letter-spacing: 1px;
+             font-size: 11px;
+             
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             font-weight: bolder;
+             transition: 1s;
+
+        }
+        .form-detail button:hover{
+            background-color: #49c642;
+        }
+        .fa-brands{
+            position: absolute;
+            left: 460px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .fa-mailchimp{
+            margin-top: 22px;
+        }
+        .form-detail p{
+            /* text-align: center; */
+            font-size: 12px;
+            letter-spacing: .4px;
+            font-weight: 600;
+            margin-left: 60px;
+        }
+        .form-detail span{
+            color: #972a0f;
+            font-size: 16px;
+            margin-top: -37px;
+            margin-left: 55px;
+        }
+      
+        .form-detail small{
+            display: block;
+            font-size: 10px;
+        }   
+           
+        
+    </style>
+</head>
+<body>
+   
+<section>
+     <div class="nav">
+        <img class="logo" src="./A Letter.png" >
+          <h2>ARUN </h2>
+          
+           <ul>
+              <li  ><a id="home"  href="#Home">Home</a></li>
+                <li ><a id="about" href="#About">About</a></li>
+                  <li ><a id="three" href="#Services">Services</a></li>
+                  <li ><a id="four"href="#Contact">Contact</a></li>
+                <li ><a id="five" href="#Community">Community</a></li>
+              <li ><a id="blog" href="#Blog">Blog</a></li>
+           </ul>
+         
+            <div class="icon1">
+               <i  class="fa-brands fa-instagram"></i>
+                 <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-apple"></i>
+            </div>  
+      </div>
+          <div>
+             <video class="video" src="./pexels-skyler-ewing-10449329-3840x2160-24fps.mp4" autoplay loop muted></video>       
+               <div class="image">
+                  <img class="image1" src="./4900.jpg">      
+                    <div class="title">
+                       <h1>
+                          ARUN PANDI
+                          <span >Junior Web Developer</span>
+                       </h1>
+                    </div>
+               </div>
+           </div>
+</section>     
+<script>
+    const web=document.querySelectorAll('section');
+    const link=document.querySelectorAll('.logo h2 ul li a');
+    console.log(link)
+    window.addEventListener('scroll',()=>{
+         let current = '';
+        web.forEach(sec =>{
+            
+            const offset =sec.offsetTop;
+            const height = sec.clientHeight;
+            if(pageYOffset >= offset){
+                current=sec.getAttribute('id');
+            }
+           
+            
+                link.forEach(links =>{
+                    links.classList.remove('funny');
+                    if(links.classList.contains(current)){
+                        links.classList.add('funny')
+                    }
+            
+        })
+    })
+    })
+
+</script>     
+           <!-- <script>
+             const button = document.querySelectorAll(".fun");
+             const values= document.querySelector(".about");
+            
+
+             button.forEach((buttons) => {
+                buttons.addEventListener('click',(e)=>{
+                    e.preventDefault();
+                    setFunctions(e);
+                    const dataBike =e.target.dataset.filter; 
+                       
+                    values.forEach((btn)=>{
+                   if(dataBike=='home'){
+                   btn.style.display="block";
+                   }
+                   else{
+                   const bikeValue =btn.target.dataset.project;
+                
+                   if(dataBike===bikeValue){
+                   btn.style.display='block';
+                   }else{
+                   btn.style.display='none'
+            }
+        }
+       })  
+                }
+                
+                )
+             });
+            function setFunctions(e){
+                button.forEach((value)=>{
+                    value.classList.remove('funny')
+                })
+                e.target.classList.add('funny')
+             } -->
+            </script>
+ <section id="home">          
+             <div  class="about" >
+                <h2 >About me</h2>               
+                  <div class="detail">                        
+                     <div class="boxX">
+                         <div> 
+                            <img class="image2" src="./imag1.jpg" >
+                         </div> 
+                     </div>
+                    <div class="content"> 
+                        <h3>Im Arun ,<span>Junior Web Developer</span></h3>
+                        <p> Hi! My name is  Arun Pandi. I am a Web Developer, and I'm very passionate and dedicated to my work.  I have acquired the skills and knowledge necessary to make your project a success.</p>
+                        <ul class="list">
+                            <li><i class="fa-solid fa-calendar-days"> </i>Birthday:  19-6-2001</li>
+                              <li><i class="fa-solid fa-location-dot"></i>Location:  Poondi , Kodaikanal</li>
+                                 <li><i class="fa-solid fa-graduation-cap"></i>Degree :  B.E _ Mech</li>
+                                <li><i class="fa-solid fa-building-columns"></i> Study:  Anna Univercity DSCE</li>
+                              <li><i class="fa-solid fa-phone"></i>Phone:  6374360962</li>
+                            <li><i class="fa-brands fa-asymmetrik"></i>Age:  21</li>
+                        </ul>
+                    </div>                      
+                  </div>            
+               </div> 
+ </section id="about">             
+               <div class="java-content">
+                  <h1>SIMPLE PROJECTS</h1>
+                  <h4>A Purr Css Modal-Popup</h4>
+                  <div class="kodai-video">
+                     <video src="./kodai-forest.mp4" loop muted autoplay ></video>
+                  </div>
+                   <div class="img-2">
+                     <h3>And below is the code !</h3>
+                      <div><img src="./Screenshot (16).png" alt=""></div>
+                      <div><img src="./Screenshot (17).png" alt=""></div>
+                  </div>
+                  
+               </div>
+               
+               <div class="java-title">
+                <h2>A pure vanilla java script</3> 
+               </div>
+
+<section id="three">              
+               <div id="buttons"> 
+                  <button class="btn onclick" data-filter="all">All</button>
+                    <button class="btn"data-filter="ns">NS 200</button>
+                      <button class="btn"data-filter="ktm">KTM</button>
+                    <button class="btn"data-filter="duke">DUKE</button>
+                  <button class="btn"data-filter="mt">MT</button>
+             
+                  <input type=""placeholder="Search ❤ Bike........." id="search">
+              </div>
+              <div class="container">
+               <div class="box" data-bikes="ns"><img src="./imm/pxfuel (11).jpg" alt=""></div>
+                 <div class="box"data-bikes="ktm"><img src="./imm/pxfuel (12).jpg" alt=""></div> 
+                   <div class="box"data-bikes="ns"><img src="./imm/pxfuel (10).jpg" alt=""></div>
+                     <div class="box"data-bikes="duke"><img src="./imm/pxfuel (7).jpg" alt=""></div>
+                       <div class="box"data-bikes="ktm"><img src="./imm/pxfuel (6).jpg" alt=""></div>
+                         <div class="box"data-bikes="duke"><img src="./imm/pxfuel (5).jpg" alt=""></div>
+                           <div class="box"data-bikes="duke"><img src="./imm/pxfuel (4).jpg" alt=""></div>
+                             <div class="box"data-bikes="duke"><img src="./imm/pxfuel (3).jpg" alt=""></div>
+                               <div class="box"data-bikes="ns"><img src="./imm/pxfuel (2).jpg" alt=""></div>
+                                 <div class="box"data-bikes="ns"><img src="./imm/pxfuel (1).jpg" alt=""></div>
+                               <div class="box"data-bikes="mt"><img src="./imm/wallpaperflare.com_wallpaper (10).jpg" alt=""></div>
+                             <div class="box"data-bikes="duke"><img src="./imm/wallpaperflare.com_wallpaper (9).jpg" alt=""></div>
+                           <div class="box"data-bikes="ktm"><img src="./imm/wallpaperflare.com_wallpaper (8).jpg" alt=""></div>
+                         <div class="box"data-bikes="duke"><img src="./imm/wallpaperflare.com_wallpaper (7).jpg" alt=""></div>
+                       <div class="box"data-bikes="ktm"><img src="./imm/wallpaperflare.com_wallpaper (12).jpg" alt=""></div>
+                     <div class="box"data-bikes="ktm"><img src="./imm/wallpaperflare.com_wallpaper (13).jpg" alt=""></div>
+                  <div class="box"data-bikes="ns"><img src="./imm/pxfuel.jpg" alt=""></div>
+               <div class="box"data-bikes="ns"><img src="./imm/pxfuel (14).jpg" alt=""></div>
+               <div class="box"data-bikes="ns"><img src="./imgg3 (2).jpg" alt=""></div>
+               <div class="box"data-bikes="ns"><img src="./imgg2.jpg" alt=""></div>
+              </div>
+              <div class="img-2">
+               <h3>And below is the code !</h3>
+                <div><img src="./Screenshot (19).png" alt=""></div>
+                <div><img src="./Screenshot (20).png" alt=""></div>
+            </div>
+ </section>
+ <section id="four">            
+            <div class="arun">
+               <div id="pro">
+                    <h1 class="meet">𝙈𝙀𝙀𝙏𝙈𝙀 </h1>
+                </div>
+               <div class="pro1"> 
+                        <h4 class="meet-2">MEET ME</h4>
+                  <!--nav menu codes-->     
+                         <ul class="pro2">         
+                             <li> <a href="#">HOME</a></li>
+                               <li> <a href="#"> ABOUT</a></li>
+                                 <li> <a href="#">SERVICE</a></li>
+                               <li> <a href="#"> PARTS</a></li>
+                              <li><a href="#"> BLOG</a></li>
+                            <li> <a href="#"> CONTACT</a></li>
+                         </ul>
+                  <!--image and detail codes -->       
+                    <div class="pro3"> 
+                      <div class="col">
+            
+                        <img id="col1" src="./pandi.png" alt="">
+            
+                            <div class="col2">
+                              <h6>HELLO EVERYBODY, I AM</h6>
+                                <small>ARUN PANDI</small>
+                                  <h3>🇯‌🇺‌🇳‌🇮‌🇴‌🇷‌ 🇼‌🇪‌🇧‌ 🇩‌🇪‌🇻‌🇪‌🇱‌🇴‌🇵‌🇪‌🇷‌</h3>
+                                    <p class="col3">  You will begin to realise why this  exercise is called the Dickins Pattern(With there ference to the ghost shoowing scrooge some different futures) </p>
+            
+                                  <!--detaill icons codes-->          
+                        <ul >
+                          <li><i class="fa fa-calendar" aria-hidden="true"></i>19st June, 2001</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> 6374360962</li>
+                              <li><i class="fa fa-envelope" aria-hidden="true"></i>arunpandi@gmail.com</li>
+                                <li><i class="fa fa-home" aria-hidden="true"></i>Poondi Kodaikanal</li>
+            
+                         </ul>
+                       </div>
+                     </div>  
+              </div>
+            </div>
+          </div>  
+            <div class="img-2">
+               <h3>And below is the code !</h3>
+                <div><img src="./Screenshot (23).png" alt=""></div>
+                <div><img src="./Screenshot (24).png" alt=""></div>
+            </div>
+ </section>          
+            <div class="containers">
+        
+               <div class="icon" >
+                     
+                   <img src="./flutter-logo_drzj7u.png" alt=""> <span class="names">Kodai'An</span>
+                       <ul>
+                           <li > <a href="#"> Places</a> </li>
+                           <li> <a href="#">Geography</a></li>
+                           <li><a href="#">Transport</a></li>
+                           <li><a href="#">Econemy</a></li>
+                           <li><a href="#">About As</a></li>
+                       </ul>
+                            <div class="junior">     
+                                  <button  >Login</button> 
+                                  <button  >Booking</button>
+                            </div>
+       
+                                 <div class="looking">
+                                            <p>Looking Back" Through <br>The History of <br> Kodaikanal</p>
+                                            <h5> Princess of Hill Stations </h5>
+                                        <div class="con11">
+                                            <button class="welcome">Welcome Page</button>       
+                                                 
+                                        </div>                                                
+                                  </div>  
+                            </div>                             
+               </div>
+           </div>
+           <div class="img-2">
+               <h3>And below is the code !</h3>
+                <div><img src="./Screenshot (29).png" alt=""></div>
+                 <div><img src="./Screenshot (28).png" alt=""></div>
+           </div> 
+               <!--Background Image Add-->
+<section id="five"> 
+ <div id="bg">
+        <img src="./pexels-pixabay-66284.jpg" alt="">
+   
+
+    <!-- Nav Bar Codes-->
+
+     <div id="hero">
+       <h2 class="h2"> Coc Start</h2>
+    
+      <ul class="ul"> 
+         
+             <li>Page</li>
+                  <li>Tollers</li>
+                       <li >Levels</li>
+                             <li  >About</li>
+                                    <li >Contact</li>
+                                    
+      </ul>
+    
+    </div>
+
+   <!-- Header And Content codes -->
+
+    <section id="sec">
+        <div id="content">
+            <h5 class="h5">#Kodai'An</h5>
+              <h1 class="h1">Tom Jerry</h1>
+                  <p>Kannukkoru vannakilii
+                     Kaadhukkoru gaanakkuyil
+                     Nenjukkoru vanjikkodi needhaanamma  
+                     Thathi thavalum thangha chimizhae
+                   </p>  
+            <a href="#">COMPLETE</a>
+            <a href="#"><i class="fa-solid fa-play"></i>WATCH GAMEPLAY</a>  
+      
+    
+    <!-- Side Image Add(Tom And Jerry) -->
+
+          <div id="img">
+            <img src="./5a1c67516064c4.9202405715118108973948.png" alt="">
+
+           </div>    
+      </div>
+</section>
+ </div>
+<div class="img-2">
+    <h3>And below is the code !</h3>
+     <div><img src="./Screenshot (30).png" alt=""></div>
+      <div><img src="./Screenshot (31).png" alt=""></div>
+</div>
+<h1 class="slide-h1">SlideShow Images Using Java Script </h1> 
+<div id="slider-container">
+    <div id="slider-images">
+      <img class="slider-image" src="./pxfuel (3).jpg" alt="Product 1">
+      <img class="slider-image" src="./pxfuel (5).jpg" alt="Product 2">
+      <img class="slider-image" src="./pxfuel (7).jpg" alt="Product 3">
+      <!-- Add more images as needed -->
+    </div>
+     
+    <div id="prev-button">&lt;</div>
+    <div id="next-button">&gt;</div>
+  </div>
+
+  <script>
+    var sliderContainer = document.getElementById('slider-container');
+    var sliderImages = document.getElementById('slider-images');
+    var prevButton = document.getElementById('prev-button');
+    var nextButton = document.getElementById('next-button');
+    var imageWidth = document.querySelector('.slider-image').offsetWidth;
+    var currentPosition = 0;
+
+    // Move the slider to the next image
+    function slideNext() {
+      currentPosition -= imageWidth;
+      if (currentPosition < -imageWidth * (sliderImages.children.length - 1)) {
+        currentPosition = 0;
+      }
+      sliderImages.style.left = currentPosition + 'px';
+    }
+
+    // Move the slider to the previous image
+    function slidePrev() {
+      currentPosition += imageWidth;
+      if (currentPosition > 0) {
+        currentPosition = -imageWidth * (sliderImages.children.length - 1);
+      }
+      sliderImages.style.left = currentPosition + 'px';
+    }
+
+    // Attach click event listeners to the buttons
+    nextButton.addEventListener('click', slideNext);
+    prevButton.addEventListener('click', slidePrev);
+  </script>
+  <div class="img-2   "> 
+   <h3>And below is the code !</h3>
+   <div><img src="./Screenshot (32).png" alt=""></div>
+    <div><img src="./Screenshot (33).png" alt=""></div>
+</div>
+<div class="b-day">
+    <!-- <img src="./4900.jpg" alt="" width="800px" height="600px"> -->
+ <div class="contain">   
+    <div class="title">
+        <h2>countdown</h2>
+        <h1>new year</h1>
+    </div>
+    <div class="boxXX">
+      <h3 id="days">00</h3>
+      <p>days</p>
+    </div>
+    <div class="boxXX">
+        <h3 id="hour">00</h3>
+        <p >hours</p>
+      </div>
+      <div class="boxXX">
+        <h3 id="min">00</h3>
+        <p>minutes</p>
+      </div>
+      <div class="boxXX">
+        <h3 class="sec">00</h3>
+        <p>seconds</p>
+      </div>
+  </div>
+</div>
+ <script>
+    const days  = document.querySelector("#days");
+    const hours = document.querySelector("#hour");
+    const minutes = document.querySelector("#min");
+    const seconds = document.querySelector(".sec");
+    
+  function newYear(){
+    const current = new Date(); 
+                    //1000ms=1s //60s = 1Min                                                  
+    const nextYear =new Date('june 19 2024')     //60min = 1Hr   //24hrs = 1Day
+    const gab = nextYear-current;                                                                                                  
+    const dayValue = parseInt(gab/1000/60/60/24);
+   
+    const hourValue = parseInt((gab/1000/60/60)%24);
+    const minValue = parseInt((gab/1000/60)%60);
+    const secValue = parseInt((gab/1000)%60);             // JS convert in millseconds
+    
+    // console.log(dayValue+ " "+hourValue+" "+minValue+ " "+secValue)
+    
+    days.innerHTML=dayValue<10?"0"+dayValue:dayValue;
+     hours.innerHTML=hourValue<10?"0"+hourValue:hourValue
+    minutes.innerHTML=minValue<10?"0"+minValue:minValue
+    seconds.innerHTML=secValue<10?"0"+secValue:secValue
+  }
+  
+  setInterval(newYear)
+  
+ </script>
+
+  <div class="img-2   "> 
+    <h3>And below is the code !</h3>
+    <div><img src="./Screenshot (34).png" alt=""></div>
+     <div><img src="./Screenshot (35).png" alt=""></div>
+  </div>
+<div class="form-detail" >   
+  <form class="form">
+    <h2> Log In</h2>
+    
+    <i class="fa-brands fa-mailchimp"></i><input  type="text" placeholder="User Name" id="uname" required>
+    <i class="fa-brands fa-ello"></i><input type="password" placeholder="ATM PIN" id="pass" required>
+    <i class="fa-brands fa-hotjar"></i><input type="number"placeholder="Mobile" id="number" required>
+    <button type="button"value="submit" onclick="myFunction()"> login</button>
+    <p>Not a member? <span>Sign-up</span></p>
+ </form>
+</div>
+ <script>
+    
+     function myFunction(){
+         const user= document.getElementById('uname').value;
+         const password = document.getElementById('pass').value;
+         const number= document.getElementById('number').value;
+     
+
+         if(user=="arun" && password =="12345" && number=="123456789"){
+              alert("successfully")
+            //  window.location.assign("radio.html")
+
+         }
+         else{
+             alert("Invalid Details")
+            //  user.style.border="1px solid red"
+         }
+     }
+ </script>
+</body>
+</html>
